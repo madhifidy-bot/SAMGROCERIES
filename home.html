@@ -8,33 +8,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+    
         body {
             font-family: 'Sansita', sans-serif;
+            background-image: url('https://th.bing.com/th/id/OIP.zBABZ3ljC1E-lfc0YANLBQHaFi?cb=iwc1&rs=1&pid=ImgDetMain'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
-        .video-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: -1;
-        }
-        .video-container video {
-            width: 100%;
-            height: auto;
-            min-height: 100%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            object-fit: cover;
-        }
-        @media (max-width: 768px) {
-            .video-container {
-                display: none;
-            }
-        }
+        
+        
         .info-section {
             background-color: #f7fafc;
             padding-top: 2rem;
@@ -143,12 +126,7 @@
     </header>
 
     <section class="bg-center bg-cover bg-no-repeat h-[300px] flex items-center justify-center" style="background-image: url('organic-food-background.jpg');">
-        <div class="video-container">
-            <video autoplay loop muted playsinline>
-                <source src="https://media.istockphoto.com/id/2188714169/video/fresh-raw-vegetables-and-fruits.mp4?s=mp4-640x640-is&k=20&c=vS26umOV72q0yW6ynnTWqP679YKPYNnz0QdkGgCaQhs=" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+       
         <div class="text-center text-white p-8 relative z-10">
             <h1 class="text-4xl md:text-6xl font-bold mb-4">Your journey to wholesome living starts here!</h1>
             <p class="text-xl mb-8">Organic fruits & vegetables for you and your family.</p>
